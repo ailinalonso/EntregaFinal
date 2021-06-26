@@ -27,10 +27,18 @@ html{
   /*------BARRA DE NAVEGACION------*/
 .navbar {
   background-color: #0C163D;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  font-family: 'Ubuntu', sans-serif;
   a {
     color: #C2F213;
   }
+.logo{
+  font-weight: bolder;
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
 
+}
 }
 .navbar-toggler-icon {
 background-image: url(../../imagenes/papas.png);
@@ -59,6 +67,7 @@ background-image: url(../../imagenes/papas.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  color: aliceblue;
 }
 .textoEscribinos{
   margin: 2rem;
@@ -74,6 +83,9 @@ background-image: url(../../imagenes/papas.png);
 .animate__slideInDown{
   animation-duration: 1s;
   --animate-repeat:3;
+}
+.boxContactanos{
+  margin: 2rem;
 }
 
 
@@ -114,7 +126,7 @@ background-image: url(../../imagenes/papas.png);
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-image: url(../../imagenes/D.jpg);
+  background-image: url(../../imagenes/BRAZO.jpg);
   background-repeat: no-repeat;
   background-size:cover;
 }
@@ -167,7 +179,6 @@ background-image: url(../../imagenes/papas.png);
   justify-content: center;
   justify-items: center;
   align-content: center;
-  height: 200vh;
 }
 .miembrosDer{
   display: flex;
@@ -176,7 +187,7 @@ background-image: url(../../imagenes/papas.png);
   justify-items: center;
   padding: 3rem;
   height: 100vh;
-  background-image: url(../../imagenes/BRAZO.jpg);;
+  background-image: url(../../imagenes/miembrosCHICO.jpg);;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -280,6 +291,9 @@ background-image: url(../../imagenes/papas.png);
 /*-----------------------------------------MEDIAS QUERIES-------------------------------*/
 
 @media (min-width: 720px) {
+  .container {
+    max-width: 100%;
+  }
   nav {
     height: 130px;
   }
@@ -287,7 +301,7 @@ background-image: url(../../imagenes/papas.png);
   .homeIzq {
     display: flex;
     flex-direction: column;
-    background-image: url(../../imagenes/227888.jpg);
+    background-image: url(../../imagenes/homeGRANDE.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
@@ -304,7 +318,7 @@ background-image: url(../../imagenes/papas.png);
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url(../../imagenes/1a.jpg);
+    background-image: url(../../imagenes/entrGRANDE.jpg);
     background-repeat: no-repeat;
     background-size:cover;
   }
@@ -313,7 +327,7 @@ background-image: url(../../imagenes/papas.png);
     font-size: 6rem;
     font-family: 'Ubuntu', sans-serif;
     align-content: flex-end;
-    color: #C2F213;
+    color: aliceblue;
     width: 30rem;
     padding: 1rem;
     padding-top: 3rem;
@@ -337,30 +351,24 @@ background-image: url(../../imagenes/papas.png);
     justify-content: center;
     justify-items: center;
     align-content: center;
-    height: 100vh;
   }
   .miembrosDer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    padding: 3rem;
-    height: 100vh;
-    background-image: url(../../imagenes/b.jpg);;
+    background-image: url(../../imagenes/miembrosCHICO.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
   .miembrosIzq{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background-color: #1f1f1f;
   }
   /*---------NOSOTROS----------*/
   .nosotrosTop {
     display: flex;
     flex-direction: row;
-    height: 100vh;
     background-color: brown;
     h2 {
       text-align: left;
@@ -376,7 +384,6 @@ background-image: url(../../imagenes/papas.png);
   }
   .presentacionProfes{
     background-color: cadetblue;
-    width: 100%;
   }
   /*----------CONTACTOS---------*/
 .todoContactos{
@@ -387,12 +394,11 @@ background-image: url(../../imagenes/papas.png);
   grid-template-columns: 1fr 1fr;
   grid-template-areas: anteContacto boxContactanos;
   justify-content: center;
-  height: 100vh;
 }
 .anteContacto {
   display: flex;
   flex-direction: column;
-  background-image: url(../../imagenes/D.jpg);
+  background-image: url(../../imagenes/PIE.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -405,7 +411,22 @@ background-image: url(../../imagenes/papas.png);
   color: aliceblue;
 }
 .boxContactanos{
-  margin: 3rem;
+  margin-top: 3rem;
+  padding: 3rem;
+  height: 100%;
+}
+/* --------Footer------------*/
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: aqua;
+  .footer2{
+    display: flex;
+    flex-direction: row;
+    width: 30rem;
+  }
 }
 
 }

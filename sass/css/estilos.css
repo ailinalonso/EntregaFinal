@@ -42,9 +42,16 @@ html {
 
 /*------BARRA DE NAVEGACION------*/
 .navbar {
-  background-color: #0C163D; }
+  background-color: #0C163D;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  font-family: 'Ubuntu', sans-serif; }
   .navbar a {
     color: #C2F213; }
+  .navbar .logo {
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif; }
 
 .navbar-toggler-icon {
   background-image: url(../../imagenes/papas.png); }
@@ -70,7 +77,8 @@ html {
   background-image: url(../../imagenes/PIE.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  color: aliceblue; }
 
 .textoEscribinos {
   margin: 2rem;
@@ -86,6 +94,9 @@ html {
 .animate__slideInDown {
   animation-duration: 1s;
   --animate-repeat:3; }
+
+.boxContactanos {
+  margin: 2rem; }
 
 /*--------INDEX HOME---------------*/
 .indexHome {
@@ -123,7 +134,7 @@ html {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-image: url(../../imagenes/D.jpg);
+  background-image: url(../../imagenes/BRAZO.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -170,8 +181,7 @@ html {
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  align-content: center;
-  height: 200vh; }
+  align-content: center; }
 
 .miembrosDer {
   display: flex;
@@ -180,7 +190,7 @@ html {
   justify-items: center;
   padding: 3rem;
   height: 100vh;
-  background-image: url(../../imagenes/BRAZO.jpg);
+  background-image: url(../../imagenes/miembrosCHICO.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -278,13 +288,15 @@ html {
 
 /*-----------------------------------------MEDIAS QUERIES-------------------------------*/
 @media (min-width: 720px) {
+  .container {
+    max-width: 100%; }
   nav {
     height: 130px; }
   /*-------------HOME------------*/
   .homeIzq {
     display: flex;
     flex-direction: column;
-    background-image: url(../../imagenes/227888.jpg);
+    background-image: url(../../imagenes/homeGRANDE.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh; }
@@ -299,7 +311,7 @@ html {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url(../../imagenes/1a.jpg);
+    background-image: url(../../imagenes/entrGRANDE.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
   .textoEntrenamientos {
@@ -307,7 +319,7 @@ html {
     font-size: 6rem;
     font-family: 'Ubuntu', sans-serif;
     align-content: flex-end;
-    color: #C2F213;
+    color: aliceblue;
     width: 30rem;
     padding: 1rem;
     padding-top: 3rem; }
@@ -325,28 +337,22 @@ html {
     flex-direction: row;
     justify-content: center;
     justify-items: center;
-    align-content: center;
-    height: 100vh; }
+    align-content: center; }
   .miembrosDer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    padding: 3rem;
-    height: 100vh;
-    background-image: url(../../imagenes/b.jpg);
+    background-image: url(../../imagenes/miembrosCHICO.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
   .miembrosIzq {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-color: #1f1f1f; }
+    flex-direction: column; }
   /*---------NOSOTROS----------*/
   .nosotrosTop {
     display: flex;
     flex-direction: row;
-    height: 100vh;
     background-color: brown; }
     .nosotrosTop h2 {
       text-align: left;
@@ -358,8 +364,7 @@ html {
     width: 50%;
     margin: 4rem; }
   .presentacionProfes {
-    background-color: cadetblue;
-    width: 100%; }
+    background-color: cadetblue; }
   /*----------CONTACTOS---------*/
   .todoContactos {
     padding-top: 3rem;
@@ -368,12 +373,11 @@ html {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: anteContacto boxContactanos;
-    justify-content: center;
-    height: 100vh; }
+    justify-content: center; }
   .anteContacto {
     display: flex;
     flex-direction: column;
-    background-image: url(../../imagenes/D.jpg);
+    background-image: url(../../imagenes/PIE.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; }
@@ -384,4 +388,16 @@ html {
     font-family: 'Ubuntu', sans-serif;
     color: aliceblue; }
   .boxContactanos {
-    margin: 3rem; } }
+    margin-top: 3rem;
+    padding: 3rem;
+    height: 100%; }
+  /* --------Footer------------*/
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: aqua; }
+    .footer .footer2 {
+      display: flex;
+      flex-direction: row;
+      width: 30rem; } }
