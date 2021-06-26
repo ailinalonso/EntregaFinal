@@ -67,7 +67,7 @@ html {
 .anteContacto {
   display: flex;
   flex-direction: column;
-  background-image: url(../../imagenes/E.jpg);
+  background-image: url(../../imagenes/PIE.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -97,7 +97,7 @@ html {
 .homeIzq {
   display: flex;
   flex-direction: column;
-  background-image: url(../../imagenes/A.jpg);
+  background-image: url(../../imagenes/PESA.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh; }
@@ -108,6 +108,15 @@ html {
   font-size: 1rem;
   font-family: 'Ubuntu', sans-serif;
   align-content: flex-end; }
+
+.botonIndex {
+  width: 20rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: aliceblue;
+  background-color: brown;
+  border-style: none; }
 
 /*-------INDEX ENTRENAMIENTOS-------*/
 .indexEntrenamientos {
@@ -138,7 +147,6 @@ html {
 .nosotrosTop {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
   height: 100vh;
   align-items: center;
   background-color: brown; }
@@ -172,7 +180,7 @@ html {
   justify-items: center;
   padding: 3rem;
   height: 100vh;
-  background-image: url(../../imagenes/b.jpg);
+  background-image: url(../../imagenes/BRAZO.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -268,17 +276,112 @@ html {
   .separate {
     padding-top: 60px; } }
 
-/*--------MEDIAS QUERIES------------*/
-@media (min-width: 992px) {
+/*-----------------------------------------MEDIAS QUERIES-------------------------------*/
+@media (min-width: 720px) {
   nav {
     height: 130px; }
-  .indexMiembros {
+  /*-------------HOME------------*/
+  .homeIzq {
     display: flex;
-    flex-direction: row; } }
-
-@media (min-width: 1200px) {
-  nav {
-    height: 130px; }
-  .indexMiembros {
+    flex-direction: column;
+    background-image: url(../../imagenes/227888.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh; }
+  .textoIndex {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    align-content: flex-end; }
+  /*--------ENTRENAMIENTOS---------*/
+  .indexEntrenamientos {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(../../imagenes/1a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .textoEntrenamientos {
+    font-weight: bolder;
+    font-size: 6rem;
+    font-family: 'Ubuntu', sans-serif;
+    align-content: flex-end;
+    color: #C2F213;
+    width: 30rem;
+    padding: 1rem;
+    padding-top: 3rem; }
+  .entrenamientosVideos {
+    width: 100%; }
+  .titulo h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1rem; }
+  /*--------MIEMBROS----------*/
+  .indexMiembros {
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    height: 100vh; }
+  .miembrosDer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    padding: 3rem;
+    height: 100vh;
+    background-image: url(../../imagenes/b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .miembrosIzq {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1f1f1f; }
+  /*---------NOSOTROS----------*/
+  .nosotrosTop {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: brown; }
+    .nosotrosTop h2 {
+      text-align: left;
+      justify-content: center;
+      font-weight: bolder;
+      font-size: 4rem;
+      font-family: 'Ubuntu', sans-serif; }
+  .imagenNosotros {
+    width: 50%;
+    margin: 4rem; }
+  .presentacionProfes {
+    background-color: cadetblue;
+    width: 100%; }
+  /*----------CONTACTOS---------*/
+  .todoContactos {
+    padding-top: 3rem;
+    display: grid;
+    background-color: orange;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: anteContacto boxContactanos;
+    justify-content: center;
+    height: 100vh; }
+  .anteContacto {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../imagenes/D.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .textoEscribinos {
+    margin: 3rem;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: aliceblue; }
+  .boxContactanos {
+    margin: 3rem; } }
