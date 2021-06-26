@@ -120,6 +120,11 @@ background-image: url(../../imagenes/papas.png);
   background-color: brown;
   border-style: none;
 }
+.botonIndex:hover{
+  color: brown;
+  background-color: aliceblue;
+  transition: 0.6s;
+}
 /*-------INDEX ENTRENAMIENTOS-------*/
 
 .indexEntrenamientos {
@@ -141,10 +146,11 @@ background-image: url(../../imagenes/papas.png);
 }
 .textoVideos h4{
   font-weight: bolder;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: 'Ubuntu', sans-serif;
   align-content: flex-end;
-  padding: 1rem;
+  padding: 1.5rem;
+  color: aliceblue;
 }
 /*------NOSOTROS-----*/
 
