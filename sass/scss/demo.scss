@@ -31,7 +31,7 @@ html{
   font-size: 1.3rem;
   font-family: 'Ubuntu', sans-serif;
   a {
-    color: aliceblue;
+    color: antiquewhite;
   }
 .logo{
   font-weight: bolder;
@@ -67,7 +67,7 @@ background-image: url(../../imagenes/papas.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: aliceblue;
+  color: antiquewhite;
 }
 .textoEscribinos{
   margin: 2rem;
@@ -88,7 +88,6 @@ background-image: url(../../imagenes/papas.png);
   margin: 1rem;
 }
 
-
 /*--------INDEX HOME---------------*/
 .indexHome {
   display: flex;
@@ -105,7 +104,7 @@ background-image: url(../../imagenes/papas.png);
   height: 100vh;
 }
 .textoIndex{
-  color: aliceblue;
+  color: antiquewhite;
   font-weight: bolder;
   font-size: 1rem;
   font-family: 'Ubuntu', sans-serif;
@@ -116,13 +115,13 @@ background-image: url(../../imagenes/papas.png);
   font-weight: bolder;
   font-size: 1.5rem;
   font-family: 'Ubuntu', sans-serif;
-  color: aliceblue;
+  color: antiquewhite;
   background-color: brown;
   border-style: none;
 }
 .botonIndex:hover{
   color: brown;
-  background-color: aliceblue;
+  background-color: antiquewhite;
   transition: 0.6s;
 }
 /*-------INDEX ENTRENAMIENTOS-------*/
@@ -140,7 +139,7 @@ background-image: url(../../imagenes/papas.png);
   font-size: 3rem;
   font-family: 'Ubuntu', sans-serif;
   align-content: flex-end;
-  color: brown;
+  color: antiquewhite;
   width: 10rem;
   padding: 4rem;
 }
@@ -150,7 +149,7 @@ background-image: url(../../imagenes/papas.png);
   font-family: 'Ubuntu', sans-serif;
   align-content: flex-end;
   padding: 1.5rem;
-  color: aliceblue;
+  color: antiquewhite;
 }
 /*------NOSOTROS-----*/
 
@@ -159,13 +158,24 @@ background-image: url(../../imagenes/papas.png);
   flex-direction: column;
   height: 100vh;
   align-items: center;
-  background-color: brown;
+  background-color: antiquewhite;
   h2 {
     margin: 2rem;
+    color: #1f1f1f;
     font-weight: bolder;
     font-size: 1.5rem;
     font-family: 'Ubuntu', sans-serif;
     align-content: flex-end;
+  }
+}
+.presentacionProfes{
+  background-color: #1f1f1f;
+  h2{
+    color: antiquewhite;
+    padding: 1rem;
+  }
+  p{
+    color: antiquewhite;
   }
 }
 
@@ -211,11 +221,11 @@ background-image: url(../../imagenes/papas.png);
   font-family: 'Ubuntu', sans-serif;
 }
 .desarrollo{
-  color: aliceblue;
+  color: antiquewhite;
 }
 .botonMiembros{
   background-color: brown;
-  color: aliceblue;
+  color: antiquewhite;
   border-style: none;
   width: 12rem;
   height: 4rem;
@@ -229,13 +239,13 @@ background-image: url(../../imagenes/papas.png);
   transition: 0.6s;
 }
 .precioMiembros{
-  color: aliceblue;
+  color: antiquewhite;
   padding: 1rem;
   font-size: 1.5rem;
   font-family: 'Ubuntu', sans-serif;
 }
 .tituloUsuario{
-  color: brown;
+  color: antiquewhite;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bolder;
   font-size: 2.5rem;
